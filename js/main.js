@@ -1,4 +1,3 @@
-console.log(alert('Bienvenido a la Guía de Entrenamiento Virtual de Gym'))
 
 let ejerciciosBrazos = ['flexiones', 'tríceps', 'bíceps'];
 let repeticionesBrazosFacil = [5, 10, 15];
@@ -10,8 +9,21 @@ let repeticionesPiernasFacil = [4, 8, 12];
 let repeticionesPiernasIntermedio = [8, 12, 16];
 let repeticionesPiernasDificil = [12, 16, 20];
 
-let alumnos = [];
-let nivelEjercicio = [];
+class Alumno {
+    static id = 0
+
+    constructor (nombre, apellido, edad, peso) {
+        this.id = ++Alumno.id
+        this.nombre = nombre,
+        this.apellido = apellido,
+        this.edad = edad,
+        this.peso = peso,
+        this.nivelEjercicio = nivel 
+    }
+}
+
+const alumnos = [];
+const nivelEjercicio = [];
 
 
 registrarAlumnos()
@@ -24,20 +36,20 @@ let rutinaDelDia = determinarRutina(prompt('Ingrese el día de la semana').toLow
 
 
 function registrarAlumnos() {
-    let continuar = true;
-    while (continuar) {
 
-    let nombre = prompt('Por favor ingrese su Nombre y Apellido')
-    alumnos.push(nombre);
-    let nivel = prompt('Nivel de entrenamiento: Principiante, Intermedio o Difíci').toLocaleLowerCase()
-    nivelEjercicio.push(nivel);
-    let confirmacion = prompt('Desea registrar otro alumno? (si/no)').toLowerCase()
-        if(confirmacion != "si") {
-        continuar = false
+    let cargarNombre = document.getElementById("nombre").value
+    let cargarApellido = document.getElementById("apellido").value
+    let cargarEdad = document.getElementById("edad").value
+    let cargarPeso = document.getElementById("peso").value
+    let cargarNivel = document.getElementById("nivel").value
+
+    const alumno = new Alumno (cargarNombre, cargarApellido, cargarEdad, cargarPeso, cargarNivel)
+
+    alumnos.push(alumno)
+    nivelEjercicio.push(cargarNivel)
 }
-}
-    return alumnos
-}
+    
+
 
 function determinarRutina(diaDeLaSemana) {
     switch(diaDeLaSemana){
@@ -74,7 +86,7 @@ function comenzarClase(rutinaDelDia) {
                     } 
             case 'piernas':
                 switch(tipoAlumno) {
-                case 'principiante': 
+                    case 'principiante': 
                         ejecutarRutina(alumnos[i], ejerciciosPiernas, repeticionesPiernasFacil);
                         break;
                     case 'intermedio':
@@ -84,8 +96,8 @@ function comenzarClase(rutinaDelDia) {
                         ejecutarRutina(alumnos[i], ejerciciosPiernas, repeticionesPiernasDificil)
                         break;
                     }
-            default:
-                console.log('Hoy es tu día de descanso! Disfruta tu día libre!!');
+                    default:
+                        console.log('Hoy es tu día de descanso! Disfruta tu día libre!!');
 }
         console.log('-------------------------')
         }
