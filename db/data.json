@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "clase": "60 Minutos de Personal Training Individual",
+        "dias": 1,
+        "precio": 15000,
+        "cantidad": 1,
+        "subtotal": 0
+    },
+    {
+        "id": 2,
+        "clase": "Programa de 5 Semanas de Personal Training Individual 1/SEM",
+        "dias": 1,
+        "precio": 35000,
+        "cantidad": 1,
+        "subtotal": 0
+    },
+    {
+        "id": 3,
+        "clase": "Programa de 5 Semanas de Personal Training Individual 2/SEM",
+        "dias": 2,
+        "precio": 40000,
+        "cantidad": 1,
+        "subtotal": 0
+    },
+    {
+        "id": 4,
+        "clase": "Programa de 5 Semanas de Personal Training Individual 3/SEM",
+        "dias": 3,
+        "precio": 45000,
+        "cantidad": 1,
+        "subtotal": 0
+    },
+    {
+        "id": 5,
+        "clase": "Programa de 5 Semanas de Personal Training Individual 4/SEM",
+        "dias": 4,
+        "precio": 50000,
+        "cantidad": 1,
+        "subtotal": 0
+    },
+    {
+        "id": 6,
+        "clase": "Programa de 5 Semanas de Personal Training Individual 5/SEM",
+        "dias": 5,
+        "precio": 60000,
+        "cantidad": 1,
+        "subtotal": 0
+    }
+]

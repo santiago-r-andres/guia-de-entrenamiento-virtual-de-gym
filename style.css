@@ -1,0 +1,66 @@
+/* Reset*/  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Nunito", sans-serif;
+}
+
+
+h1 {
+background-color:sandybrown
+
+}
+
+.seccion {
+    background-color:rgb(222, 172, 122);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #6f7d6c;
+        --bs-btn-border-color: #6f7d6c;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #5c6a5c;
+        --bs-btn-hover-border-color: #5c6456;
+        --bs-btn-focus-shadow-rgb: 130, 138, 145;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #5c6456;
+        --bs-btn-active-border-color: #575e51;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #6f7d6c;
+        --bs-btn-disabled-border-color: #6f7d6c;
+    } 
+    
+
+
+    body {
+        font-family: "Nunito", sans-serif;
+    }
+    
+    .product, .cart-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
