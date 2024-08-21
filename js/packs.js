@@ -49,7 +49,7 @@
             const contenedor = document.createElement("div")
             contenedor.className = "product"
             contenedor.innerHTML += `<h3>${product.clase}</h3>
-                                    <p>Precio: $${product.precio}</p>
+                                    <p>$${product.precio}</p>
                                     <button id=${product.id} class="agregar-carrito">Agregar al Carrito</button>`
                                 
             productsContainer.appendChild(contenedor)
@@ -84,7 +84,7 @@ function agregarProducto(e) {
 function leerDatosProducto(pack) {
     let clase, precio, id
     clase = pack.querySelector("h3").textContent
-    precio = Number(pack.querySelector("p").textContent.replace(/[^0-9]/g, ""))
+    precio = Number(pack.querySelector("p").textContent.replace("$", ""))
     id = parseInt(pack.querySelector("button").getAttribute("id"))
 
     

@@ -54,7 +54,7 @@ background-color:sandybrown
     }
     
     button {
-        background-color: #4CAF50;
+        background-color: sandybrown;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -62,5 +62,11 @@ background-color:sandybrown
     }
     
     button:hover {
-        background-color: #45a049;
+        background-color: #a07545;
+    }
+
+    .product {
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
